@@ -1,0 +1,66 @@
+<div>
+  <div style="background-color: #262626; color: whitesmoke; padding: 2rem 0">
+    <div style="padding: 3rem 0; display: flex; ">
+      <div style="display: flex; justify-content: center"><img src="assets/hos.jpg" style="width: 80%; height: fit-content"></div>
+      <div  style="    max-width: 50%;">
+        <h1 style="    font-size: 2rem;
+    font-weight: 600;">Humans Of Startup</h1>
+        <div style="display: flex; padding: 0.5rem 0">
+          <div class="avatar">
+          </div>
+          <div style="margin: 0.5rem">
+            <span>Hosted by</span><br>
+            <span>Aayush Bhutada</span>
+          </div>
+        </div>
+        <div style="padding: 2rem 0; font-size: 1rem">
+          <span>This podcast aims to focus on the more humane aspects of the startup world rather than technical know-how.<br>
+            <br>
+
+This podcast is primarily geared towards Indian Startups as we bring stories of entrepreneurs exclusively from the Indian ecosystem. Through this podcast, I would like to focus on the journey along with its ups & downs.<br>
+<br>
+If you would like to be featured on our podcast, you can contact me on the below details.</span>
+        </div>
+        <div style="display: flex">
+        <button mat-raised-button class="mat-warn" style="
+    font-size: 1rem;
+    padding: 0.5rem 2.5rem; border-radius: 30px; background-color: #ff914d">Subscribe to podcast
+        </button>
+        <div style="font-size: 1rem; width: 40%">
+          <div style="display: flex; justify-content: space-between; padding: 1rem 1rem">
+            <a class="a-color icon-size" href="https://www.linkedin.com/company/humansofstartup/" target="_blank">
+              <fa-icon [icon]="faLinkedin"></fa-icon>
+            </a>
+            <a class="a-color icon-size" href="https://www.youtube.com/channel/UCDbq0g6gzpcHlgMsHQaIb5g/featured" target="_blank">
+              <fa-icon [icon]="faYoutube"></fa-icon>
+            </a>
+            <a class="a-color icon-size">
+              <fa-icon [icon]="faSpotify"></fa-icon>
+            </a>
+            <a class="a-color icon-size">
+              <fa-icon [icon]="faTwitter"></fa-icon>
+            </a>
+            <a class="a-color icon-size">
+              <fa-icon [icon]="faInstagram"></fa-icon>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #f6f6f6">
+  <div style="padding-top: 4rem">
+    <div style="display:flex; align-items: center; flex-direction: column">
+      <div class="pod-card" *ngFor="let d of dataSource">
+        <div><img [src]="d.img" style="width: 75%; height: fit-content"></div>
+        <div class="card-content">
+          <h2 (click)="navigateToEpisode(d.id)">{{d.title}}</h2>
+          <span>{{d.description}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

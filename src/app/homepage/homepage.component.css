@@ -1,0 +1,29 @@
+.pod-card {
+  display: flex;
+  background-color: white;
+  width: 80%;
+  margin: 2rem 0;
+  padding: 2.4rem 4%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  border-radius: 10px;
+}
+
+.card-content{
+  width: 150%;
+}
+
+.a-color{
+  color: white;
+}
+
+.icon-size{
+  font-size: 22px;
+}
+
+.avatar{
+  width: 5%;
+  height: 4vh;
+  background-image: url("src/assets/aayush.jpg");
+  border-radius: 35px; margin: 0.5rem;
+  background-size: contain;
+}

@@ -1,0 +1,6 @@
+.avatar{
+  width: 5%;
+  height: 4vh;
+  background-image: url("src/assets/aayush.jpg");
+  border-radius: 35px; margin: 0.5rem;
+}
